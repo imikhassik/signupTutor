@@ -6,7 +6,7 @@ from django import forms
 class BaseRegisterForm(UserCreationForm):
     email = forms.EmailField(label='Email')
     first_name = forms.CharField(label='Имя')
-    last_name = forms.CharField(lable='Фамилия')
+    last_name = forms.CharField(label='Фамилия')
 
     class Meta:
         model = User
